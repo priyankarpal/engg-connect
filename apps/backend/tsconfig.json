@@ -1,16 +1,20 @@
 {
-  "extends": "@repo/typescript-config/base.json",
-  "compilerOptions": {
-    "lib": [
-      "ES2015"
+    "compilerOptions": {
+        "target": "es6",
+        "module": "NodeNext",
+        "outDir": "build",
+        "baseUrl": "src",
+        "strict": true,
+        "esModuleInterop": true,
+        "moduleResolution": "NodeNext",
+        "sourceMap": true,
+        "forceConsistentCasingInFileNames": true,
+        "noImplicitAny": true,
+    },
+    "include": [
+        "src/**/*"
     ],
-    "module": "CommonJS",
-    "outDir": "./dist",
-  },
-  "exclude": [
-    "node_modules"
-  ],
-  "include": [
-    "."
-  ]
+    "exclude": [
+        "node_modules"
+    ]
 }
